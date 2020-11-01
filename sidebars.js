@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-  docs: [
+  "docs": [
     { type: 'category', label: 'Introduction', items: ['about', 'faq']},
     {
       type: 'category',
@@ -34,24 +34,41 @@ module.exports = {
           label: 'Software',
 
           items:[
-            'track/software/hello-world',
+            'track/software/inheritance',
+            'track/software/constructors',
+            'track/software/overloads',
+            'track/software/exceptionHandling',
+            'track/software/pointerArithmetic',
         
               ],
       },
+      { 
+        type: 'category',
+        label: 'business',
+
+        items:[
+          'track/software/inheritance',
+          'track/software/constructors',
+          'track/software/overloads',
+          'track/software/exceptionHandling',
+          //'track/software/pointerArithmetic',
+      
+            ],
+    },
       ]
     },
-    {
-      type: 'category',
-      label: 'Realtime',
+    // {
+    //   type: 'category',
+    //   label: 'Legal',
 
-      items: [
-        'realtime/about',
-        'realtime/docker',
-        'realtime/aws',
-        'realtime/digitalocean',
-        'realtime/source',
-      ],
-    },
+    //   items: [
+    //     'legal/privacyNotice',
+    //     'legal/cookiePolicy',
+    //     'legal/termsOfUse',
+    //     'legal/disclaimer'
+        
+    //   ],
+    // },
     {
       type: 'category',
       label: 'Realtime',
