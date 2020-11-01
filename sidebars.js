@@ -8,21 +8,6 @@
 module.exports = {
   "docs": [
     { type: 'category', label: 'Introduction', items: ['about', 'faq'] },
-    {
-      type: 'category',
-      label: 'Library',
-
-      items: [
-        'library/getting-started',
-        'library/user-management',
-        'library/get',
-        'library/post',
-        'library/patch',
-        'library/delete',
-        'library/subscribe',
-        'library/stored-procedures',
-      ],
-    },
 
     {
       type: 'category',
@@ -44,30 +29,27 @@ module.exports = {
             'track/business/index',
           ]
         },
+        {
+          type: 'category',
+          label: 'book club',
+          items: [
+            'track/bookClub/index',
+          ]
+        },
       ]
-
     },
-
 
     {
       type: 'category',
-      label: 'Realtime',
+      label: 'Legal',
 
       items: [
-        'realtime/about',
-        'realtime/docker',
-        'realtime/aws',
-        'realtime/digitalocean',
-        'realtime/source',
-      ],
+        'legal/cookiePolicy',
+        'legal/disclaimer',
+        'legal/privacyNotice',
+        'legal/termsOfUse',
+      ]
     },
 
-    { type: 'category', label: 'Postgres', items: ['postgres/postgres-intro'] },
-    {
-      type: 'category',
-      label: 'See Also',
-      items: ['guides/examples', 'pricing', 'support', 'handbook/contributing'],
-    },
-    // Handbook: ['handbook/introduction', 'handbook/contributing'],
   ],
 }
