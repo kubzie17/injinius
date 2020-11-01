@@ -6,19 +6,19 @@
  */
 
 module.exports = {
-  title: 'Njinius',
+  title: 'Supabase',
   tagline: 'The open source Firebase alternative.',
   url: 'https://supabase.io',
   baseUrl: '/',
-  favicon: '/static/img/njinlogo.png',
-  organizationName: 'Njinius', // Usually your GitHub org/user name.
-  projectName: 'Njinius', // Usually your repo name.
+  favicon: '/favicon.ico',
+  organizationName: 'supabase', // Usually your GitHub org/user name.
+  projectName: 'supabase', // Usually your repo name.
   themeConfig: {
-    forceDarkMode: false,
-    darkMode: false,
+    forceDarkMode: true,
+    darkMode: true,
     colorMode: {
       // "light" | "dark"
-      defaultMode: 'light',
+      defaultMode: 'dark',
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
@@ -44,7 +44,7 @@ module.exports = {
     sidebarCollapsible: false,
     algolia: {
       apiKey: '766d56f13dd1e82f43253559b7c86636',
-      indexName: 'njinius',
+      indexName: 'supabase',
     },
     image: '/img/supabase-og-image.png', // used for meta tag, in particular og:image and twitter:image
     metaImage: '/img/supabase-og-image.png',
@@ -63,46 +63,23 @@ module.exports = {
       // title: 'supabase',
       hideOnScroll: true,
       logo: {
-        alt: 'Njinius',
-        src: '/static/img/njiniusone.png',
+        alt: 'Supabase',
+        src: '/supabase-light.svg',
         srcDark: '/supabase-dark.svg',
       },
       items: [
         {
           to: '/docs',
-          label: 'Guides',
-          position: 'right',
-          className: 'navbar-item-pages',
-        },
-        {
-          to: '/blog',
-          label: 'Blogs',
-          position: 'right',
-          className: 'navbar-item-pages',
-        },
-        { to: '/schedule', label: 'Schedule', position: 'right' },
-        {
-          to: '/videos',
-          label: 'Videos',
+          label: 'Docs',
           position: 'right',
         },
-        {
-          to: '/docs/software',
-          label: 'Software',
-          position: 'right',
-        },
-        {
-          to: '/tracks',
-          label: 'Tracks',
-          position: 'right',
-        },
-       // { href: 'https://app.supabase.io', label: 'Login', position: 'right' },
+        { to: '/docs/pricing', label: 'Pricing', position: 'right' },
+        { href: 'https://app.supabase.io', label: 'Login', position: 'right' },
         {
           href: 'https://github.com/supabase/supabase',
           className: 'navbar-item-github',
           position: 'right',
         },
-     
       ],
     },
     prism: {

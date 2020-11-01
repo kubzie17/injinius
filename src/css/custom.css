@@ -307,11 +307,6 @@ li + li {
 }
 .navbar .navbar__link {
   font-weight: bold;
-
-}
-
-.navbar__link:hover, .navbar__link--active{
-  color: #16d5db;
 }
 /* .navbar-sidebar__items .menu__link {
   line-height: calc(var(--ifm-spacing-vertical) * 2) !important;
@@ -320,7 +315,6 @@ li + li {
   font-size: 0.9em;
   padding: 10px !important;
 } */
-
 
 .with-underline::after {
   content: '\2501\2501';
@@ -907,8 +901,6 @@ html[data-theme='light'] .DocSearch, html[data-theme='dark'] .DocSearch {
 .navbar-item-github:hover {
   opacity: 0.6;
 }
-
-
 .navbar-item-github:before {
   content: '';
   width: 24px;
@@ -928,19 +920,4 @@ html[data-theme='dark'] .navbar-item-github:before {
 .w-full {
   width: 100%;
   max-width: 100%;
-}
-
-.navbar{
-  border-bottom: 0px;
-}
-
-.col--7{
-  margin-right: 0px;
-}
-.col--5 > h2 {
-  text-align: center;
-}
-
-.njinius{
-  margin-left: 100px;
 }

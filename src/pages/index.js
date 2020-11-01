@@ -11,7 +11,7 @@ import HowCard from '../components/HowCard'
 import { repos } from '../data/github'
 
 const heroExample = `
-const messages = Njinius
+const messages = supabase
   .from('messages')
   .select(\`
     id, text,
@@ -194,15 +194,13 @@ function Home() {
   const [visibleCodeExample, showCodeExample] = useState('READ')
   return (
     <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
-      <main className="HomePage" >
+      <main className="HomePage">
         {/* HEADER */}
         <header className={classnames('hero full', styles.heroBanner)}>
           <div className="container">
-  
             <div className="row">
               <div className="col col--5">
-                
-                <h2 className="hero__title">About</h2>
+                <h2 className="hero__title">{siteConfig.tagline}</h2>
                 <p className="hero__subtitle">
                   Supabase adds realtime and restful APIs to Postgres without a single line of code.
                 </p>
@@ -230,78 +228,28 @@ function Home() {
                 </div>
               </div>
               <div className="col col--7">
-                <img className="njinius" src='/static/img/njinaltlogo.png' height="380" width="390"/>
-                {/* <CustomCodeBlock
-                 // header="Query your PostgreSQL database and listen in real-time."
-                  //js={heroExample}
-                  <img =
-                /> */}
+                <CustomCodeBlock
+                  header="Query your PostgreSQL database and listen in real-time."
+                  js={heroExample}
+                />
               </div>
             </div>
           </div>
         </header>
 
-        <body className={classnames('hero full', styles.heroBanner)}>
-          <div className="container">
-  
-            <div className="row">
-              <div className="col col--5">
-              <img className="aboutlogo" src='/static/img/njinaltlogo.png' height="380" width="390"/>
-                
-              </div>
-              <div className="col col--7">
-              <h2 className="hero__title">{siteConfig.tagline}</h2>
-                <p className="hero__subtitle">
-                  Supabase adds realtime and restful APIs to Postgres without a single line of code.
-                </p>
-                <div>
-                  <Link
-                    className={classnames(
-                      'button hero--button button--md button--secondary button--outline responsive-button',
-                      styles.button
-                    )}
-                    to={useBaseUrl('docs')}
-                    style={{ marginLeft: 0, marginTop: 10 }}
-                  >
-                    Learn More
-                  </Link>
-                  <Link
-                    className={classnames(
-                      'button hero--button button--md button--primary responsive-button',
-                      styles.button
-                    )}
-                    to={'https://app.supabase.io'}
-                    style={{ marginTop: 10 }}
-                  >
-                    Alpha sign up →
-                  </Link>
-                </div>
-                {/* <CustomCodeBlock
-                 // header="Query your PostgreSQL database and listen in real-time."
-                  //js={heroExample}
-                  <img =
-                /> */}
-              </div>
-            </div>
-          </div>
-        </body>
-
-        {/* <section
+        <section
           style={{
             padding: 30,
-            color: "blue",
           }}
           className="hero is--dark"
         >
           <div
             className="container "
-            color= "blue"
             style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
           >
             <img src="/img/yc-gray.png" alt="Y Combinator" width="50" />
             <p
               style={{
-                color: "blue",
                 fontWeight: 'bold',
                 padding: '0px 20px',
                 margin: 0,
@@ -311,11 +259,11 @@ function Home() {
               Backed by Y Combinator
             </p>
           </div>
-        </section> */}
+        </section>
 
         {/* HOW */}
-        {/* <section className={'section-lg'}>
-          <div className="container"  color="blue">
+        <section className={'section-lg'}>
+          <div className="container">
             <div className={classnames('row', styles.responsiveCentered)}>
               <div className="col col--6 col--offset-3">
                 <h2 className="">How it works</h2>
@@ -387,108 +335,108 @@ function Home() {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* For Devs */}
-          <section className={styles.forDevelopers}>
-            <div className="container">
-              <div className={classnames('row', styles.responsiveCentered)}>
-                <div className="col col--6 col--offset-3">
-                  <h2 className="">For Developers</h2>
-                  <p className="">
-                    We introspect your database and provide APIs 
-                    <strong className="has-emphasis">instantly</strong> so you can stop building
-                    repetitive CRUD APIs and focus on building your products.
-                  </p>
-                </div>
+        <section className={styles.forDevelopers}>
+          <div className="container">
+            <div className={classnames('row', styles.responsiveCentered)}>
+              <div className="col col--6 col--offset-3">
+                <h2 className="">For Developers</h2>
+                <p className="">
+                  We introspect your database and provide APIs 
+                  <strong className="has-emphasis">instantly</strong> so you can stop building
+                  repetitive CRUD APIs and focus on building your products.
+                </p>
               </div>
-              <div className="ForDevelopers">
-                <div className="row">
-                  <div className="ButtonTabs col col--3">
-                    <div>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'READ' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('READ')}
-                      >
-                        Get your data
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'SUBSCRIBE' ? 'info is-active' : 'info'
-                        }`}
-                        onClick={() => showCodeExample('SUBSCRIBE')}
-                      >
-                        Realtime subscriptions
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'CREATE' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('CREATE')}
-                      >
-                        Create a record
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'UPDATE' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('UPDATE')}
-                      >
-                        Update multiple rows
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'NODETS' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('NODETS')}
-                      >
-                        Node.js & TypeScript support
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'UMD' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('UMD')}
-                      >
-                        Install from CDN
-                      </button>
-                    </div>
+            </div>
+            <div className="ForDevelopers">
+              <div className="row">
+                <div className="ButtonTabs col col--3">
+                  <div>
+                    <button
+                      className={`button button--${
+                        visibleCodeExample === 'READ' ? 'info is-active' : 'info '
+                      }`}
+                      onClick={() => showCodeExample('READ')}
+                    >
+                      Get your data
+                    </button>
+                    <button
+                      className={`button button--${
+                        visibleCodeExample === 'SUBSCRIBE' ? 'info is-active' : 'info'
+                      }`}
+                      onClick={() => showCodeExample('SUBSCRIBE')}
+                    >
+                      Realtime subscriptions
+                    </button>
+                    <button
+                      className={`button button--${
+                        visibleCodeExample === 'CREATE' ? 'info is-active' : 'info '
+                      }`}
+                      onClick={() => showCodeExample('CREATE')}
+                    >
+                      Create a record
+                    </button>
+                    <button
+                      className={`button button--${
+                        visibleCodeExample === 'UPDATE' ? 'info is-active' : 'info '
+                      }`}
+                      onClick={() => showCodeExample('UPDATE')}
+                    >
+                      Update multiple rows
+                    </button>
+                    <button
+                      className={`button button--${
+                        visibleCodeExample === 'NODETS' ? 'info is-active' : 'info '
+                      }`}
+                      onClick={() => showCodeExample('NODETS')}
+                    >
+                      Node.js & TypeScript support
+                    </button>
+                    <button
+                      className={`button button--${
+                        visibleCodeExample === 'UMD' ? 'info is-active' : 'info '
+                      }`}
+                      onClick={() => showCodeExample('UMD')}
+                    >
+                      Install from CDN
+                    </button>
                   </div>
-                  <div className="col col--9 code-with-header">
-                    {visibleCodeExample === 'READ' && (
-                      <CustomCodeBlock
-                        header="Get all public rooms and their messages"
-                        js={readExample}
-                      />
-                    )}
-                    {visibleCodeExample === 'SUBSCRIBE' && (
-                      <CustomCodeBlock
-                        header="Receive realtime messages in an example chat room"
-                        js={subscribeExample}
-                      />
-                    )}
-                    {visibleCodeExample === 'CREATE' && (
-                      <CustomCodeBlock header="Create a new chat room" js={createExample} />
-                    )}
-                    {visibleCodeExample === 'UPDATE' && (
-                      <CustomCodeBlock header="Update a user" js={updateExample} />
-                    )}
-                    {visibleCodeExample === 'NODETS' && (
-                      <CustomCodeBlock
-                        header="Server-side & client-side TypeScript support e.g. in Next.js API routes"
-                        js={nodeTSExample}
-                      />
-                    )}
-                    {visibleCodeExample === 'UMD' && (
-                      <CustomCodeBlock header="Supabase-js standalone bundle" js={umdExample} />
-                    )}
-                  </div>
+                </div>
+                <div className="col col--9 code-with-header">
+                  {visibleCodeExample === 'READ' && (
+                    <CustomCodeBlock
+                      header="Get all public rooms and their messages"
+                      js={readExample}
+                    />
+                  )}
+                  {visibleCodeExample === 'SUBSCRIBE' && (
+                    <CustomCodeBlock
+                      header="Receive realtime messages in an example chat room"
+                      js={subscribeExample}
+                    />
+                  )}
+                  {visibleCodeExample === 'CREATE' && (
+                    <CustomCodeBlock header="Create a new chat room" js={createExample} />
+                  )}
+                  {visibleCodeExample === 'UPDATE' && (
+                    <CustomCodeBlock header="Update a user" js={updateExample} />
+                  )}
+                  {visibleCodeExample === 'NODETS' && (
+                    <CustomCodeBlock
+                      header="Server-side & client-side TypeScript support e.g. in Next.js API routes"
+                      js={nodeTSExample}
+                    />
+                  )}
+                  {visibleCodeExample === 'UMD' && (
+                    <CustomCodeBlock header="Supabase-js standalone bundle" js={umdExample} />
+                  )}
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
         {/* USE CASES */}
         {/* <section className={'section-lg'}>
@@ -502,7 +450,7 @@ function Home() {
           </div>
         </section> */}
 
-        {/* <section className={'section-lg'}>
+        <section className={'section-lg'}>
           <div className="container">
             <div className={classnames('row', styles.centered)}>
               <div className="col col--6 col--offset-3">
@@ -524,7 +472,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* <section className={'section-lg'}>
           <div className="container">
@@ -548,7 +496,7 @@ function Home() {
         </section> */}
 
         {/* OSS */}
-        {/* <section className={'section-lg'}>
+        <section className={'section-lg'}>
           <div className="container">
             <div className={classnames('row', styles.responsiveCentered)}>
               <div className="col col--6 col--offset-3">
@@ -624,7 +572,7 @@ function Home() {
               </a>
             </div>
           </div>
-        </section> */}
+        </section>
       </main>
     </Layout>
   )
