@@ -7,11 +7,11 @@
 
 module.exports = {
   "docs": [
-    { type: 'category', label: 'Introduction', items: ['about', 'faq']},
+    { type: 'category', label: 'Introduction', items: ['about', 'faq'] },
     {
       type: 'category',
       label: 'Library',
-  
+
       items: [
         'library/getting-started',
         'library/user-management',
@@ -23,7 +23,24 @@ module.exports = {
         'library/stored-procedures',
       ],
     },
-    
+
+    {
+      type: 'category',
+      label: 'Track',
+
+      items: [
+        'track/index',
+        {
+          type: 'category',
+          label: 'Software',
+          items:[
+            'track/software/index',
+          ]
+
+        }
+      ],
+    },
+
 
     {
       type: 'category',
