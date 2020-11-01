@@ -1,9 +1,11 @@
 ---
-id: exceptionHandling
-title: Exception Handling
+id: index
+title: Overview
 description: Software Track
 ---
 
+
+overview
 ## topic
 We are here to help! We offer email based support. You can email us at alpha@supabase.io.
 

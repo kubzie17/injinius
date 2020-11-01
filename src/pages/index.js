@@ -396,8 +396,8 @@ function Home() {
                 <div className="col col--6 col--offset-3">
                   <h2 className="">For Developers</h2>
                   <p className="">
-                    We introspect your database and provide APIs 
-                    <strong className="has-emphasis">instantly</strong> so you can stop building
+                    We introspect your database and provide APIs 
+                    <strong className="has-emphasis">instantly</strong> so you can stop building
                     repetitive CRUD APIs and focus on building your products.
                   </p>
                 </div>

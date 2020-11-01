@@ -7,11 +7,11 @@
 
 module.exports = {
   "docs": [
-    { type: 'category', label: 'Introduction', items: ['about', 'faq']},
+    { type: 'category', label: 'Introduction', items: ['about', 'faq'] },
     {
       type: 'category',
       label: 'Library',
-  
+
       items: [
         'library/getting-started',
         'library/user-management',
@@ -23,52 +23,25 @@ module.exports = {
         'library/stored-procedures',
       ],
     },
+
     {
       type: 'category',
       label: 'Track',
 
       items: [
-        "track/index",
-        { 
+        'track/index',
+        {
           type: 'category',
           label: 'Software',
-
           items:[
-            'track/software/inheritance',
-            'track/software/constructors',
-            'track/software/overloads',
-            'track/software/exceptionHandling',
-            'track/software/pointerArithmetic',
-        
-              ],
-      },
-      { 
-        type: 'category',
-        label: 'business',
+            'track/software/index',
+          ]
 
-        items:[
-          'track/software/inheritance',
-          'track/software/constructors',
-          'track/software/overloads',
-          'track/software/exceptionHandling',
-          //'track/software/pointerArithmetic',
-      
-            ],
+        }
+      ],
     },
-      ]
-    },
-    // {
-    //   type: 'category',
-    //   label: 'Legal',
 
-    //   items: [
-    //     'legal/privacyNotice',
-    //     'legal/cookiePolicy',
-    //     'legal/termsOfUse',
-    //     'legal/disclaimer'
-        
-    //   ],
-    // },
+
     {
       type: 'category',
       label: 'Realtime',

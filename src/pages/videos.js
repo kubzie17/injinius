@@ -42,82 +42,82 @@ function Archive() {
                                 </div>
                             </div>
 
-                           
 
 
-                                <Row>
-                                    <Container>
-                                        <div className="App">
 
-                                            <h2>Exception Handling</h2>
-                                            <div style={{
+                            <Row>
+                                <Container>
+                                    <div className="App">
+
+                                        <h2>Exception Handling</h2>
+                                        <div style={{
+                                            alignItems: 'center',
+                                            display: 'inline',
+                                            float: 'left',
+                                            border: '1px solid black',
+                                            margin: '5px 10px 10px 0px',
+                                        }}>
+
+                                            <VideoPlayer src={videoSrc} poster={imgUrl1} width="270" height="155" />
+                                        </div>
+                                        <h6>30/10/2020  25:37</h6>
+                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
+
+                                    </div>
+
+                                </Container>
+                            </Row>
+
+
+
+                            <Row>
+                                <Container>
+                                    <div className="App2">
+                                        <h2>Video 2 title</h2>
+                                        <div style={{
+                                            alignItems: 'center',
+                                            display: 'inline',
+                                            float: 'left',
+                                            border: '1px solid black',
+                                            margin: '5px 10px 10px 0px',
+                                        }}>
+                                            <VideoPlayer src={videoSrc2} poster={imgUrl2} width="270" height="155" />
+
+                                        </div>
+                                        <h6>30/10/2020  25:37</h6>
+                                        <p className="descript">{"this is the description of the video"}</p>
+
+                                    </div>
+                                </Container>
+                            </Row>
+
+                            <Row>
+                                <Container>
+                                    <div className="App3">
+                                        <h1>Video 3 title</h1>
+                                        <div
+                                            style={{
                                                 alignItems: 'center',
                                                 display: 'inline',
                                                 float: 'left',
                                                 border: '1px solid black',
                                                 margin: '5px 10px 10px 0px',
                                             }}>
-
-                                                <VideoPlayer src={videoSrc} poster={imgUrl1} width="270" height="155" />
-                                            </div>
-                                            <h6>30/10/2020  25:37</h6>
-                                            <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
-
+                                            <VideoPlayer src={videoSrc3} poster={imgUrl3} width="270" height="155" />
                                         </div>
+                                        <h6>30/10/2020  25:37</h6>
+                                        <p className="descript">{"this is the description of the video"}</p>
 
-                                    </Container>
-                                </Row>
+                                    </div>
 
-                           
-
-                                <Row>
-                                    <Container>
-                                        <div className="App2">
-                                            <h2>Video 2 title</h2>
-                                            <div style={{
-                                                alignItems: 'center',
-                                                display: 'inline',
-                                                float: 'left',
-                                                border: '1px solid black',
-                                                margin: '5px 10px 10px 0px',
-                                            }}>
-                                                <VideoPlayer src={videoSrc2} poster={imgUrl2} width="270" height="155" />
-
-                                            </div>
-                                            <h6>30/10/2020  25:37</h6>
-                                            <p className="descript">{"this is the description of the video"}</p>
-
-                                        </div>
-                                    </Container>
-                                </Row>
-
-                                <Row>
-                                    <Container>
-                                        <div className="App3">
-                                            <h1>Video 3 title</h1>
-                                            <div
-                                                style={{
-                                                    alignItems: 'center',
-                                                    display: 'inline',
-                                                    float: 'left',
-                                                    border: '1px solid black',
-                                                    margin: '5px 10px 10px 0px',
-                                                }}>
-                                                <VideoPlayer src={videoSrc3} poster={imgUrl3} width="270" height="155" />
-                                            </div>
-                                            <h6>30/10/2020  25:37</h6>
-                                            <p className="descript">{"this is the description of the video"}</p>
-
-                                        </div>
-
-                                    </Container>
-                                </Row>
+                                </Container>
+                            </Row>
                         </div>
                     </section>
                 </header>
             </main>
         </Layout >
     )
-                                        }
-            
+}
+
 export default Archive
