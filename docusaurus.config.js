@@ -22,7 +22,7 @@ module.exports = {
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
-      disableSwitch: true,
+      disableSwitch: false,
 
       // Should we use the prefers-color-scheme media-query,
       // using user system preferences, instead of the hardcoded defaultMode
@@ -70,16 +70,33 @@ module.exports = {
       items: [
         {
           to: '/docs',
-          label: 'Docs',
+          label: 'Guides',
           position: 'right',
+          className: 'navbar-item-pages',
         },
-        { to: '/docs/pricing', label: 'Pricing', position: 'right' },
         {
-          to: '/docs',
+          to: '/blog',
+          label: 'Blogs',
+          position: 'right',
+          className: 'navbar-item-pages',
+        },
+        { to: '/schedule', label: 'Schedule', position: 'right' },
+        {
+          to: '/videos',
           label: 'Videos',
           position: 'right',
         },
-        { href: 'https://app.supabase.io', label: 'Login', position: 'right' },
+        {
+          to: '/docs/software',
+          label: 'Software',
+          position: 'right',
+        },
+        {
+          to: '/tracks',
+          label: 'Tracks',
+          position: 'right',
+        },
+       // { href: 'https://app.supabase.io', label: 'Login', position: 'right' },
         {
           href: 'https://github.com/supabase/supabase',
           className: 'navbar-item-github',

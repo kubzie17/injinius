@@ -390,7 +390,7 @@ function Home() {
         </section> */}
 
         {/* For Devs */}
-          {/* <section className={styles.forDevelopers}>
+          <section className={styles.forDevelopers}>
             <div className="container">
               <div className={classnames('row', styles.responsiveCentered)}>
                 <div className="col col--6 col--offset-3">
@@ -488,7 +488,7 @@ function Home() {
                 </div>
               </div>
             </div>
-          </section> */}
+          </section>
 
         {/* USE CASES */}
         {/* <section className={'section-lg'}>
