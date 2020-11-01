@@ -6,23 +6,23 @@
  */
 
 module.exports = {
-  title: 'Supabase',
+  title: 'Njinius',
   tagline: 'The open source Firebase alternative.',
   url: 'https://supabase.io',
   baseUrl: '/',
-  favicon: '/favicon.ico',
-  organizationName: 'supabase', // Usually your GitHub org/user name.
-  projectName: 'supabase', // Usually your repo name.
+  favicon: '/static/img/njinlogo.png',
+  organizationName: 'Njinius', // Usually your GitHub org/user name.
+  projectName: 'Njinius', // Usually your repo name.
   themeConfig: {
-    forceDarkMode: true,
-    darkMode: true,
+    forceDarkMode: false,
+    darkMode: false,
     colorMode: {
       // "light" | "dark"
-      defaultMode: 'dark',
+      defaultMode: 'light',
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
-      disableSwitch: false,
+      disableSwitch: true,
 
       // Should we use the prefers-color-scheme media-query,
       // using user system preferences, instead of the hardcoded defaultMode
@@ -44,7 +44,7 @@ module.exports = {
     sidebarCollapsible: false,
     algolia: {
       apiKey: '766d56f13dd1e82f43253559b7c86636',
-      indexName: 'supabase',
+      indexName: 'njinius',
     },
     image: '/img/supabase-og-image.png', // used for meta tag, in particular og:image and twitter:image
     metaImage: '/img/supabase-og-image.png',
@@ -63,8 +63,8 @@ module.exports = {
       // title: 'supabase',
       hideOnScroll: true,
       logo: {
-        alt: 'Supabase',
-        src: '/supabase-light.svg',
+        alt: 'Njinius',
+        src: '/static/img/njiniusone.png',
         srcDark: '/supabase-dark.svg',
       },
       items: [
@@ -74,12 +74,18 @@ module.exports = {
           position: 'right',
         },
         { to: '/docs/pricing', label: 'Pricing', position: 'right' },
+        {
+          to: '/docs',
+          label: 'Videos',
+          position: 'right',
+        },
         { href: 'https://app.supabase.io', label: 'Login', position: 'right' },
         {
           href: 'https://github.com/supabase/supabase',
           className: 'navbar-item-github',
           position: 'right',
         },
+     
       ],
     },
     prism: {

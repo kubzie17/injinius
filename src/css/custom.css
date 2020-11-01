@@ -921,3 +921,18 @@ html[data-theme='dark'] .navbar-item-github:before {
   width: 100%;
   max-width: 100%;
 }
+
+.navbar{
+  border-bottom: 0px;
+}
+
+.col--7{
+  margin-right: 0px;
+}
+.col--5 > h2 {
+  text-align: center;
+}
+
+.njinius{
+  margin-left: 100px;
+}
