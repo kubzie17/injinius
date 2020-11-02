@@ -46,7 +46,14 @@ module.exports = {
           type: 'category',
           label: 'business',
           items: [
-            'track/business/index',
+            
+            'track/business/entrepreneur',
+            'track/business/marketing',
+            'track/business/strategicPlanning',
+            'track/business/accountingAndFinance',
+            'track/business/technology',
+            'track/business/operation',
+            'track/business/humanResources',
           ]
         },
         {
