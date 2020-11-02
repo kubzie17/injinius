@@ -107,9 +107,7 @@ function Archive() {
                                         </div>
                                         <h6>30/10/2020  25:37</h6>
                                         <p className="descript">{"this is the description of the video"}</p>
-
                                     </div>
-
                                 </Container>
                             </Row>
                         </div>
